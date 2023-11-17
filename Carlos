@@ -1,0 +1,3 @@
+z<-filter(y,grepl("GET",X3)==TRUE)
+> z<-z %>% count(Hora)
+> View(z)
