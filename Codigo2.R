@@ -24,7 +24,7 @@ media <- mean(epa_http$X7, na.rm=T)
 
 #PREGUNTA 2 De las diferentes IPs de origen accediendo al servidor, ¿cuantas pertenecen a una IP claramente educativa (que contenga ".edu")?
 
-NcolumEDU <- NROW(filter(epa_http,grepl("edu",X1)==TRUE))
+NcolumEDU <- NROW(filter(epa_http,grepl(".edu",X1)==TRUE))
 
 #PREGUNTA 3 De todas las peticiones recibidas por el servidor cual es la hora en la que hay mayor volumen  de peticiones HTTP de tipo "GET"?
 #creamos una nueva variable df2 donde se separa la columna  en dia, hora, minuto, segundo
